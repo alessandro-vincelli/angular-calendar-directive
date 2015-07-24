@@ -18,4 +18,6 @@ See the demo at http://synerzip.github.io/angular-calendar-directive
 # Build App
 - grunt build
 
+## License
 
+The License (see the [LICENSE](https://github.com/handsontable/angular-calendar-directive/blob/master/LICENSE) file for the full text)
