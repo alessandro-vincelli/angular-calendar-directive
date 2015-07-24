@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head lang="en">
+    <meta charset="utf-8">
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/animate.css/animate.css" />
+    <link rel="stylesheet" href="bower_components/materialize/bin/materialize.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/calendar.css">
+    <!-- endbuild -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Calendar</title>
+    <style>
+
+    </style>
+
+</head>
+<body ng-controller="appController">
+<!--[if lt IE 7]>
+    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+<div class="navbar-fixed">
+    <nav>
+        <div class="nav-wrapper">
+            <a class="brand-logo">Test App</a>
+            <ul class="right hide-on-med-and-down">
+                <li><a class="dropdown-button waves-effect"><i class="large mdi-action-search"></i></a></li>
+                <li><a class="dropdown-button waves-effect"><i class="large mdi-content-mail"></i></a></li>
+
+            </ul>
+        </div>
+    </nav>
+</div>
+<calendar-ui default-view="week"></calendar-ui>
+
+<!-- build:js(.) scripts/vendor.js -->
+<!-- bower:js -->
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-animate/angular-animate.js"></script>
+<script src="bower_components/angular-route/angular-route.js"></script>
+<script src="bower_components/materialize/bin/materialize.js"></script>
+<script src="bower_components/moment/moment.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
+
+<!-- build:js({.tmp,app}) scripts/scripts.js -->
+<script src="scripts/directives/calendar.js"></script>
+<script src="scripts/directives/dayview.js"></script>
+<script src="scripts/directives/monthview.js"></script>
+<script src="scripts/directives/weekview.js"></script>
+<script src="scripts/directives/datepicker.js"></script>
+<script src="scripts/app.js"></script>
+<!-- endbuild -->
+<script>
+    function goto(day){
+       // ctrl.day = day;
+    }
+</script>
+</body>
+</html>
