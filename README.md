@@ -20,4 +20,4 @@ See the demo at http://synerzip.github.io/angular-calendar-directive
 
 ## License
 
-The License (see the [LICENSE](https://github.com/handsontable/angular-calendar-directive/blob/master/LICENSE) file for the full text)
+The License (see the [LICENSE](https://github.com/Synerzip/angular-calendar-directive/blob/master/LICENSE) file for the full text)
