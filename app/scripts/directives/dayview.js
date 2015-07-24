@@ -14,7 +14,7 @@ angular.module("ui-calendar")
 
             },
             require: "^calendarUi",
-            templateUrl: currentScriptPath.substring(0, currentScriptPath.lastIndexOf('/') + 1) + 'templates/dayview.html',
+            templateUrl: currentScriptPath.substring(0, currentScriptPath.lastIndexOf('/') + 1) + 'directives/templates/dayview.html',
             link: function(scope, element, attrs, controller) {
                 var calendarCtrl = controller;
 

@@ -21,7 +21,7 @@ angular.module("ui-calendar", [])
             controllerAs:'calendarCtrl',
             transclude:true,
 
-            templateUrl: currentScriptPath.substring(0, currentScriptPath.lastIndexOf('/') + 1) + 'templates/calendar.html',
+            templateUrl: currentScriptPath.substring(0, currentScriptPath.lastIndexOf('/') + 1) + 'directives/templates/calendar.html',
 
             link: function (scope, element, attrs, controller) {
                 var calendarCtrl = controller;

@@ -9,7 +9,7 @@ angular.module("ui-calendar")
 
             },
             require: "^calendarUi",
-            templateUrl: currentScriptPath.substring(0, currentScriptPath.lastIndexOf('/') + 1) + 'templates/weekview.html',
+            templateUrl: currentScriptPath.substring(0, currentScriptPath.lastIndexOf('/') + 1) + 'directives/templates/weekview.html',
             link: function(scope, element, attrs, controller) {
                 var calendarCtrl = controller;
                 buildWeekData(scope,calendarCtrl);
