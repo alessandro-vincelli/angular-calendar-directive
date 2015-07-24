@@ -1,0 +1,48 @@
+<div class="fixed-action-btn" style="bottom: 25px; left: 170px;">
+    <a class="btn-floating btn-large waves-effect waves-light red"><i class="mdi-content-add"></i></a>
+</div>
+<div class="row">
+
+    <div class="col l2">
+        <!-- Grey navigation panel -->
+
+        <blockquote><h5 class="blue-grey-text">Calendar</h5></blockquote>
+
+        <div class="divider"></div>
+
+        <datepicker></datepicker>
+
+    </div>
+
+    <div class="col l10">
+        <!-- Teal page content  -->
+
+        <div class="section">
+            <a ng-class="{'waves-effect waves-light btn disabled':calendarCtrl.todayAvailable, 'waves-effect waves-light btn' :!calendarCtrl.todayAvailable}" ng-click="gotoToday()">Today</a>
+            <a class="waves-effect waves-light btn" ng-click="previous()"><i class="medium mdi-hardware-keyboard-arrow-left"></i></a>
+            <a class="waves-effect waves-light btn" ng-click="next()"><i class="medium mdi-hardware-keyboard-arrow-right"></i></a>
+            <span ng-if="selectedView == 'month'" style="padding-left:15px;" class="blue-grey-text center">{{calendarCtrl.selected.format("MMMM YYYY")}}</span>
+            <span ng-if="selectedView == 'day'" style="padding-left:15px;" class="blue-grey-text center">{{calendarCtrl.selected.format("dddd, MMM DD, YYYY")}}</span>
+            <span ng-if="selectedView == 'week'" style="padding-left:15px;" class="blue-grey-text center">{{calendarCtrl.startDate.format("MMM DD, YYYY")}} - {{calendarCtrl.endDate.format("MMM DD, YYYY")}}</span>
+
+
+            <a class="waves-effect waves-teal btn right" ng-click="selectView('month')"><i ng-if="selectedView == 'month'" class="mdi-navigation-check"></i>Month</a>
+            <a class="waves-effect waves-teal btn right"  ng-click="selectView('week')"><i ng-if="selectedView == 'week'" class="mdi-navigation-check"></i>Week</a>
+            <a class="waves-effect waves-teal btn right"  ng-click="selectView('day')"><i ng-if="selectedView == 'day'" class="mdi-navigation-check"></i>Day</a>
+
+
+        </div>
+        <div class="divider"></div>
+
+        <!-- Month View -->
+        <month-view ng-if="selectedView == 'month'"></month-view>
+        <!--Day View-->
+        <day-view  ng-if="selectedView == 'day'"></day-view>
+        <!-- Week View -->
+        <week-view ng-if="selectedView == 'week'"></week-view>
+
+
+
+    </div>
+
+</div>
