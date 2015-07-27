@@ -2,8 +2,6 @@
  * Created by synerzip on 09/07/15.
  */
 
-var scripts = document.getElementsByTagName("script");
-var currentScriptPath = scripts[scripts.length - 1].src;
 angular.module("ui-calendar", [])
     .directive("calendarUi", [function () {
         return {
@@ -21,7 +19,7 @@ angular.module("ui-calendar", [])
             controllerAs:'calendarCtrl',
             transclude:true,
 
-            templateUrl: currentScriptPath.substring(0, currentScriptPath.lastIndexOf('/') + 1) + 'directives/templates/calendar.html',
+            templateUrl: 'scripts/directives/templates/calendar.html',
 
             link: function (scope, element, attrs, controller) {
                 var calendarCtrl = controller;

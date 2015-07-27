@@ -10,7 +10,7 @@ angular.module("ui-calendar")
             scope:{
 
             },
-            templateUrl: currentScriptPath.substring(0, currentScriptPath.lastIndexOf('/') + 1) + 'directives/templates/monthview.html',
+            templateUrl: 'scripts/directives/templates/monthview.html',
             require: "^calendarUi",
             link: function (scope, element, attrs, controller) {
                 var calendarCtrl = controller;
