@@ -4,7 +4,7 @@
 
 
 angular.module("ui-calendar")
-    .directive("monthView", [function () {
+    .directive("monthView",[function () {
         return {
             restrict: 'E',
             scope:{
@@ -58,6 +58,8 @@ angular.module("ui-calendar")
                         calendarCtrl.previous = false;
                     }
                 });
+
+                $('#monthScrollViewId').css("height",($(window).height() - 200));
 
             }
         };

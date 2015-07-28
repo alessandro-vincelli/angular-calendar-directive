@@ -56,6 +56,7 @@ angular.module("ui-calendar")
                         buildDayData(scope,calendarCtrl);
                     }
                 });
+                $('#dayViewScrollId').css("height",($(window).height() - 200));
             }
         };
 

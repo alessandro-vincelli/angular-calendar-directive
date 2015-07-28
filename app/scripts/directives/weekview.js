@@ -50,6 +50,8 @@ angular.module("ui-calendar")
                         buildWeekData(scope,calendarCtrl);
                     }
                 });
+
+                $('#weekviewScrollId').css("height",($(window).height() - 200));
             }
         };
 
