@@ -8,10 +8,12 @@
     <div class="weekheader blue-grey-text">Sat</div>
 
 </div>
+<div id="monthScrollViewId" style="overflow:auto">
 <div ng-repeat="week in weeks">
     <div ng-repeat="day in week.days" ng-class="{'datecell  grey lighten-5 blue-grey-text' : !day.isCurrentMonth,
             'datecell' : day.isCurrentMonth, 'todaycell':day.isToday,'lastDayOfWeek':day.lastDayOfWeek}">
         {{day.number}}
     </div>
 
+</div>
 </div>
